@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7362380540882153041}
   - component: {fileID: 2595098758075410380}
   - component: {fileID: 3854399026121901670}
+  - component: {fileID: 8565131646842809875}
   m_Layer: 0
   m_Name: Mothership
   m_TagString: enemy
@@ -156,6 +157,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+--- !u!64 &8565131646842809875
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879502744688949315}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2158601101792699859
 GameObject:
   m_ObjectHideFlags: 0

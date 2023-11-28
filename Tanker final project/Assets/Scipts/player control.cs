@@ -11,7 +11,7 @@ public class playercontrol : MonoBehaviour
     private float _horizontalInput;
     public ParticleSystem dirtParticle;
     public GameObject projectilePrefab;
-    public float xRange = 10.0f;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -32,16 +32,6 @@ public class playercontrol : MonoBehaviour
         // turn the vehicle
 
         transform.Rotate(Vector3.up, RotationSpeed * _horizontalInput * Time.deltaTime);
-
-        // keep the player in bounds
-        if (transform.position.x < -xRange)
-        {
-            transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
-        }
-        if (transform.position.x > xRange)
-        {
-            transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
-        }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
